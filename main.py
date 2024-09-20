@@ -142,7 +142,7 @@ def scrape_people_also_ask():
     parser = argparse.ArgumentParser(description="This script will extract faqs from google search results against a specific keyword")
 
     # Define required and optional arguments
-    parser.add_argument("keyword", help="Keyword is required for initiating google search")
+    parser.add_argument("-keyword", help="Keyword is required for initiating google search")
     parser.add_argument("-d", "--domain", help="Google regional domain like google.ca, google.us, default is google.com",default="google.com")
     parser.add_argument("-m", "--maximum_faqs", help="Provide a count, how many faqs you want to extract from google SERP, default is 50 when flag inital faq is false", default=50)
     parser.add_argument("-i", "--initial_faqs", help="Only initial faqs are required from SERP results which are usually 4, default is True", default=True)  # Set default value
